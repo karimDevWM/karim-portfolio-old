@@ -17,12 +17,13 @@ import { CurriculumVitaeComponent } from './curriculum-vitae/curriculum-vitae.co
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
-import { ReferencesComponent } from './references/references.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [AppComponent, AboutComponent, HeaderComponent, ContactComponent, CurriculumVitaeComponent, HomeComponent, ProjectsComponent, SkillsComponent, ReferencesComponent],
+  declarations: [AppComponent, AboutComponent, HeaderComponent, ContactComponent, CurriculumVitaeComponent, HomeComponent, ProjectsComponent, SkillsComponent],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     FontAwesomeModule,
     TranslateModule,
